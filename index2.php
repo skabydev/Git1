@@ -14,7 +14,7 @@
 
 <div class="second">
 <form action="" method="POST">
-Login:<input type="text" name="usrname1" placeholder="Enter Username" >    Password:<input type="password" name="paswrd1" placeholder="Enter Password">     <button type="button" name="login">Login</button>
+Login:<input type="text" name="usrname1" placeholder="Enter Username" >    Password:<input type="password" name="paswrd1" placeholder="Enter Password">    <input type="submit" name="login" value="login">
 </form> 
 </div> <!--second -->
 <br><br><br>
@@ -25,8 +25,7 @@ Login:<input type="text" name="usrname1" placeholder="Enter Username" >    Passw
 Name:<input type="text" name="usrname"><br><br>
 Phone number:<input type="text" name="number"><br><br>
 Password:<input type="password" name="paswrd"><br><br>
-Confirm Password:<input type="password" name="paswrdcnfrm"><br><br>
-<button type="button" name="signup">SignUp</button><br><br><br><br>
+<input type="submit" name="signup" value="SignUp"><br><br><br><br>
 
 </form>
 </div> <!--third-->
@@ -34,23 +33,34 @@ Confirm Password:<input type="password" name="paswrdcnfrm"><br><br>
 <p style="text-align: center;">A website to practice GIT by Skaby</p>
 </div> <!--first-->
 
+
+
+
 <?php
 
-$conn=mysqli_connect("localhost");
+$conn=mysqli_connect("localhost","root","","db");
 if(!$conn)
 {
 	die('error in connection');
+}
+else{
+	print "connected";
 }
 if (isset($_POST['signup'])) {
 
 
 $username= $_POST["usrname"];
-echo $username;
 $ph=$_POST["number"];
 $pass=$_POST["paswrd"];
-$sql1= "INSERT INTO userdb (username,phone,password) VALUES('$username'.$ph,'$pass')";
-mysqli_query($conn,$sql1);
+$sql1= "INSERT INTO userdb(`username`,`phone`,`password`) VALUES ('$username', '$ph', '$pass')";
+$result=mysqli_query($conn,$sql1);
+if ($result) {
+	echo "working";
+	# code...
+}
 
+
+mysqli_close($conn);
 }
 ?>
 
