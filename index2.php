@@ -5,14 +5,20 @@
 	<title>
 		Gitter
 	</title>
-
+<link rel="stylesheet" type="text/css" href="css/style1.css">
+<link rel="javascript" type="text/javascript" href="js/script.js">
 </head>
 <body>
-
+<div class="first">
 <h1>Gitter</h1>
 
-
-
+<div class="second">
+<form action="" method="POST">
+Login:<input type="text" name="usrname1" placeholder="Enter Username" >    Password:<input type="password" name="paswrd1" placeholder="Enter Password">     <button type="button" name="login">Login</button>
+</form> 
+</div> <!--second -->
+<br><br><br>
+<div class="third">
 <h3>SignUp</h3>
 <form action="" method="POST">
 
@@ -23,10 +29,10 @@ Confirm Password:<input type="password" name="paswrdcnfrm"><br><br>
 <button type="button" name="signup">SignUp</button><br><br><br><br>
 
 </form>
-
+</div> <!--third-->
 
 <p style="text-align: center;">A website to practice GIT by Skaby</p>
-
+</div> <!--first-->
 
 <?php
 
