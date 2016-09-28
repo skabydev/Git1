@@ -25,6 +25,7 @@ Login:<input type="text" name="usrname1" placeholder="Enter Username" >    Passw
 Name:<input type="text" name="usrname"><br><br>
 Phone number:<input type="text" name="number"><br><br>
 Password:<input type="password" name="paswrd"><br><br>
+Confirm Password: <input type="password" name="paswrd1">
 <input type="submit" name="signup" value="SignUp"><br><br><br><br>
 
 </form>
