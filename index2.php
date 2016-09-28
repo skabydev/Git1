@@ -1,12 +1,28 @@
-<DOCTYPE html>
+
 <!DOCTYPE html>
 <html>
 <head>
 	<title>
 		Gitter
 	</title>
-<link rel="stylesheet" type="text/css" href="css/style1.css">
-<link rel="javascript" type="text/javascript" href="js/script.js">
+<link rel="stylesheet" type="text/css" href="css/style1.css"> 
+<!-- <link rel="javascript" type="text/javascript" href="js/script.js"> -->
+<script type="text/javascript">
+
+function myFunction() {
+	var passwrd1= getElementsById("pass1").value;
+	var passwrd2= getElementsById("pass2").value;
+	var ok=true;
+	prompt("Varutha");
+	if(passwrd1!=passwrd2){
+		ok=false;
+	}
+	else{
+	alert("Matched");
+	}
+	return ok;
+}
+</script>
 </head>
 <body>
 <div class="first">
@@ -20,13 +36,13 @@ Login:<input type="text" name="usrname1" placeholder="Enter Username" >    Passw
 <br><br><br>
 <div class="third">
 <h3>SignUp</h3>
-<form action="" method="POST">
+<form action="" method="POST" onsubmit="return myFunction()" >
 
 Name:<input type="text" name="usrname"><br><br>
 Phone number:<input type="text" name="number"><br><br>
-Password:<input type="password" name="paswrd"><br><br>
-Confirm Password: <input type="password" name="paswrd1">
-<input type="submit" name="signup" value="SignUp"><br><br><br><br>
+Password:<input type="password" id="pass1" name="paswrd"  > <br>
+Confirm Password: <input type="password" id="pass2" name="paswrd1" >    <br><br>
+<input type="submit" name="signup" value="SignUp" > <br><br><br><br>
 
 </form>
 </div> <!--third-->
