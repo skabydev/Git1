@@ -1,4 +1,4 @@
-<script type="text/javascript">
+
 
 function mychelam() {
 	var passwrd1= document.getElementById("pass1").value;
@@ -13,4 +13,3 @@ function mychelam() {
 	
 	
 }
-</script>

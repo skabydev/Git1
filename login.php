@@ -5,9 +5,12 @@ require 'connect.php';
 
 echo '<div class="second">
 <form action="" method="POST">
-Login:<input type="text" name="usr" placeholder="Enter Username" >    
+<br><br><br>
+Login:<input type="text" name="usr" placeholder="Enter Username" >    <br><br>
 
-Password:<input type="password" name="pas" placeholder="Enter Password">    <input type="submit" name="login" value="login">
+Password:<input type="password" name="pas" placeholder="Enter Password">    <br><br>
+<input type="submit" name="login" value="login">
+
 </form> 
 </div> ';
 
@@ -24,7 +27,8 @@ if(isset($_POST['login'])){
 
     $resultn=mysqli_query($conn,$sqln);
  	if(mysqli_num_rows($resultn)==0){
-		echo "Sign up";
+		echo "
+		<div class='links'><a href='signup.php'>Sign up</a></div>";
 		
 	}
    else
