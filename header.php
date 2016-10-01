@@ -1,5 +1,6 @@
+<?php
 
-<!DOCTYPE html>
+echo '<!DOCTYPE html>
 <html>
 <head>
 	<title>
@@ -12,6 +13,6 @@
 
 <body>
 <div class="first">
-<h1>A Forum for CSE-D'ians</h1>
+<h1>A Forum for CSE-Dians</h1>';
 
-
+?>

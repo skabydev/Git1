@@ -1,12 +1,15 @@
 <?php
 
-<div class="second">
+require 'header.php';
+require 'connect.php';
+
+echo '<div class="second">
 <form action="" method="POST">
 Login:<input type="text" name="usr" placeholder="Enter Username" >    
 
 Password:<input type="password" name="pas" placeholder="Enter Password">    <input type="submit" name="login" value="login">
 </form> 
-</div>
+</div> ';
 
 
 
@@ -40,5 +43,5 @@ if(isset($_POST['login'])){
     
 }
 
-
+include 'footer.php' ;
 ?>

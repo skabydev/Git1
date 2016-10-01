@@ -16,7 +16,11 @@ h1{
 }
 
 p{
-	color: #ffffff;
+	color: #334354;
+	margin-top: 90%;
+    text-align: center;
+
+
 }
 
 .first{
@@ -27,6 +31,6 @@ p{
 }
 
 body{
-	background-color:	#ffcccc ;
-	background-image: images/first.jpg;
+
+	background: images/first.jpg;
 }
